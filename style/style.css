@@ -1,1 +1,51 @@
 /* Edit style here */
+@font-face {
+    font-family: Ultra;
+    src: url(ultra.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    justify-items: center;
+    align-items: center;
+    background-color: #494e61;
+    grid-column-gap: 30%;
+}
+
+.btn a {
+    font-family: Ultra;
+    border: 1px solid blue;
+    background-color: blue;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 4px;
+}
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.username, .logout {
+    text-align: right;
+}
+
+.username a {
+    text-decoration: none;
+    color: #99a0bb;
+}
+
+.logout a {
+    color: #ee9d9d;
+}
+.profile img {
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+    border-radius: 30%;
+}
+
