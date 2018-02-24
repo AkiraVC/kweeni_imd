@@ -103,6 +103,11 @@ form input {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.title a {
+    text-decoration: none;
+    color: #494e61;
+}
 .likes {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -135,6 +140,11 @@ form input {
     color: #d9806a
 }
 
+
+.load-more {
+    text-align: center;
+    padding: 50px 0;
+}
 @media (min-width: 700px) {
     .topic {
         grid-template-columns: 250px minmax(200px, 1fr)  250px;
