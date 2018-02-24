@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
 }
-header {
+.kweeni-header {
     display: grid;
     grid-template-columns: repeat(2, 1fr );
     justify-items: center;
@@ -24,7 +24,7 @@ header {
     grid-column-gap: 30%;
 }
 
-.btn a {
+.btn {
     font-family: Ultra;
     border: 1px solid blue;
     background-color: blue;
