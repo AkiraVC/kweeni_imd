@@ -75,3 +75,72 @@ form input {
     height: 25px;
 }
 
+/* Third Section */
+
+.topics h3 {
+    font-family: Ultra;
+    text-align: center;
+}
+
+.topic {
+    display: grid;
+    grid-template-columns: 150px minmax(100px, 1fr)  150px;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 1px solid #ececec;
+    padding: 15px 0;
+}
+
+.topic:first-of-type {
+    border-top: 1px solid #ececec;
+}
+
+.title {
+    justify-self: start;
+    display: block;
+    white-space: nowrap;
+    width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.likes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border: 1px solid #eeeeee;
+    background-color: #eeeeee;
+    color: #818baf;
+    width: 60px;
+    padding: 10px
+}
+
+.likes img {
+    width: 20px;
+}
+
+
+.user {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+.user img {
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+}
+
+.user .username {
+    color: #d9806a
+}
+
+@media (min-width: 700px) {
+    .topic {
+        grid-template-columns: 250px minmax(200px, 1fr)  250px;
+    }
+
+    form input {
+        padding: 10px 400px 10px 15px;
+    }
+}
