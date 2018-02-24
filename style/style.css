@@ -49,3 +49,29 @@ header {
     border-radius: 30%;
 }
 
+/* Second Section */
+
+.question {
+    background-color: #ffeef0;
+    height: 200px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 25px;
+}
+.question h2 {
+    font-family: Ultra;
+    text-align: center;
+    color: #fa5b33;
+    margin: 0;
+}
+form {
+    margin: 0;
+    padding: 0;
+}
+form input {
+    border: 4px solid #efadb4;
+    padding: 10px 200px 10px 15px;
+    height: 25px;
+}
+
