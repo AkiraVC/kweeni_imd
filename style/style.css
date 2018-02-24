@@ -3,20 +3,21 @@
     font-family: Ultra;
     src: url(ultra.ttf);
 }
+
 body {
     margin: 0;
     padding: 0;
 }
-header {
+/* header {
     display: grid;
     grid-template-columns: repeat(2, 1fr );
     justify-items: center;
     align-items: center;
     background-color: #494e61;
     grid-column-gap: 30%;
-}
+} */
 
-.btn a {
+.btn {
     font-family: Ultra;
     border: 1px solid blue;
     background-color: blue;
@@ -24,6 +25,7 @@ header {
     text-decoration: none;
     padding: 10px 50px;
     border-radius: 4px;
+    text-transform: uppercase;
 }
 .profile {
     display: grid;
@@ -49,3 +51,110 @@ header {
     border-radius: 30%;
 }
 
+/* HOME PAGE */
+
+.home_header {
+    background-color: #DCDCDC;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    width: 100%;
+    height: 100%;
+}
+
+.home_title {
+    color: #494E61;
+    font-family: Arial;
+    margin: 0;
+}
+
+.home_logo {
+    grid-column: 1/-1;
+    width: 35%;
+    align-self: center;
+    justify-self: center;
+    padding: 20px;
+}
+
+.home_btn {
+    grid-column: 1/-1;
+    grid-row: 3 / span 1;
+    justify-self: center;
+    margin: 20px 0 60px 0;
+}
+
+.home_containertitle {
+    grid-column: 1/-1;
+    width: 70%;
+    justify-self: center;
+    font-size: .7em;
+    padding: 20px 0;
+}
+
+.home_image1 {
+    background-image: url(../images/user1.png);
+}
+
+.home_image2 {
+    background-image: url(../images/user2.png);
+}
+
+.home_image3 {
+    background-image: url(../images/user3.png);
+}
+
+.home_image4 {
+    background-image: url(../images/user4.png);
+}
+
+.home_image5 {
+    background-image: url(../images/user5.png);
+}
+
+.home_image6 {
+    background-image: url(../images/user6.png);
+}
+
+.home_image7 {
+    background-image: url(../images/user7.png);
+}
+
+.home_image8 {
+    background-image: url(../images/user8.png);
+}
+
+.home_image9 {
+    background-image: url(../images/user9.png);
+}
+
+.home_image10 {
+    background-image: url(../images/user10.png);
+}
+
+.home_image11 {
+    background-image: url(../images/user11.png);
+}
+
+.home_image12 {
+    background-image: url(../images/user12.png);
+}
+
+.home_image1, .home_image2, .home_image3, .home_image4, .home_image6, .home_image7, .home_image8, .home_image9, .home_image10, .home_image11, .home_image12 {
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.home_image5 {
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 2;
+    background-size: cover;
+    background-position: center;
+}
+
+.home_image7 {
+    grid-column: 4 / span 1;
+    grid-row: 5 / span 2;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
