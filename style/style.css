@@ -288,7 +288,7 @@ form input {
 }
 
 .home_samenslimmer, .home_coins, .home_imd {
-    width: 80%;
+    width: 60%;
     justify-self: center;
     margin: 40px 0;
 }
@@ -432,6 +432,7 @@ form input {
     
     .home_samenslimmer, .home_coins, .home_imd {
         margin: 0;
+        width: 80%;
     }
     
     .home_overkweni img {
