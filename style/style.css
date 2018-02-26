@@ -15,14 +15,14 @@ body {
     margin: 0;
     padding: 0;
 }
-/* header {
+.kweeni-header {
     display: grid;
     grid-template-columns: repeat(2, 1fr );
     justify-items: center;
     align-items: center;
     background-color: #494e61;
     grid-column-gap: 30%;
-} */
+}
 
 .btn {
     font-family: Ultra;
@@ -173,6 +173,7 @@ form input {
     grid-template-columns: repeat(4, minmax(50px, 1fr));
     width: 100%;
     height: 100%;
+    justify-content: center;
 }
 
 .home_title {
@@ -298,4 +299,133 @@ form input {
 
 .home_overkweni img {
     width: 50px;
+}
+
+@media(min-width: 30em){
+    .home_header {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    .home_image5 {
+        grid-column: auto;
+        grid-row: 5 / span 1;
+        height: 100px;
+    }
+
+    .home_image7 {
+        grid-column: auto;
+        grid-row: 5 / span 1;
+        height: 100px;
+    }
+}
+
+@media(min-width: 60em) {
+    .home_header {
+        grid-template-columns: repeat(10, minmax(auto, 100px));
+        padding-top: 40px;
+        
+    }
+    
+    .home_logo {
+        grid-column: 1 / span 6;
+        justify-self: start;
+        width: 80%;
+    }
+    
+    .home_btn {
+        grid-column: 8 / span 1;
+        grid-row: 1 / span 1;
+        justify-self: center;
+        align-self: center;
+        margin: 20px 0 20px 0;
+    }
+    
+    .home_containertitle {
+        grid-column: 1 / span 5;
+        width: 70%;
+        justify-self: start;
+        font-size: 1em;
+        padding: 20px 0 40px 20px;
+        align-self: start;
+    }
+    
+    .home_image1 {
+        grid-column: 6 / span 1;
+        align-self: end;
+    }
+    
+    .home_image2 {
+        grid-column: 9 / span 1;
+        align-self: end;
+    }
+    
+    .home_image3 {
+        grid-column: 1 / span 1;
+    }
+    
+    .home_image4 {
+        grid-column: 3 / span 1;
+    }
+    
+    .home_image5 {
+        grid-column: 4 / span 2;
+        grid-row: 3 / span 2;
+        height: 200px;
+    }
+    
+    .home_image6 {
+        grid-column: 7 / span 1;
+    }
+    
+    .home_image7 {
+        grid-column: 9 / span 1;
+        grid-row: 3 / span 1;
+    }
+    
+    .home_image8 {
+        grid-column: 10 / span 1;
+    }
+    
+    .home_image9 {
+        grid-column: 2 / span 1;
+    }
+    
+    .home_image10 {
+        grid-column: 7 / span 2;
+        grid-row: 4 / span 1;
+        height: 200px;
+    }
+    
+    .home_image11 {
+        grid-column: 9 / span 1;
+    }
+    
+    .home_image12 {
+        grid-column: 3 / span 1;
+        grid-row: 4 / span 1;
+        align-self: end;
+    }
+    
+    .home_overkweni {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+    
+    .home_samenslimmer {
+        grid-column: 1 / span 1;
+    }
+    
+    .home_coins {
+        grid-column: 2 / span 1;
+    }
+    
+    .home_imd {
+        grid-column: 2 / span 1;
+        justify-self: left;
+    }
+    
+    .home_samenslimmer, .home_coins, .home_imd {
+        width: auto;
+        margin: 0;
+    }
+
 }
