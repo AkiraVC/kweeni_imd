@@ -341,7 +341,7 @@ form input {
     
     .home_containertitle {
         grid-column: 1 / span 5;
-        width: 70%;
+        width: 100%;
         justify-self: start;
         font-size: 1em;
         padding: 20px 0 40px 20px;
@@ -408,14 +408,21 @@ form input {
     .home_overkweni {
         grid-template-columns: 1fr 1fr;
         grid-gap: 50px;
+        max-width: 900px;
+        margin: 100px auto;
+        align-content: center;
     }
     
     .home_samenslimmer {
         grid-column: 1 / span 1;
+        grid-row: 1 / span 2;
+        justify-self: left;
+        align-self: center;
     }
     
     .home_coins {
         grid-column: 2 / span 1;
+        justify-self: left;
     }
     
     .home_imd {
@@ -424,8 +431,15 @@ form input {
     }
     
     .home_samenslimmer, .home_coins, .home_imd {
-        width: auto;
         margin: 0;
+    }
+    
+    .home_overkweni img {
+        width: 60px;
+    }
+    
+    .home_coins_title, .home_samenslimmer_title, .home_imd_title {
+        font-size: 1em;
     }
 
 }
